@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enterprise-banking-transaction-system"
+version = "1.0.0"
+description = "A durable, testable banking transaction ledger with a command-line interface."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Enterprise Banking Transaction System Maintainers" }]
+license = "MIT"
+keywords = ["banking", "ledger", "transactions", "cli"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial",
+]
+
+[project.scripts]
+ebank = "banking.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
