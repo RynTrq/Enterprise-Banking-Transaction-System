@@ -1,5 +1,7 @@
 # Enterprise Banking Transaction System
 
+[![Verify](https://github.com/RynTrq/Enterprise-Banking-Transaction-System/actions/workflows/verify.yml/badge.svg)](https://github.com/RynTrq/Enterprise-Banking-Transaction-System/actions/workflows/verify.yml)
+
 A production-minded local banking ledger for creating accounts, recording deposits and withdrawals, transferring funds, and auditing transaction history from a clean Python API or command-line interface.
 
 This repository was upgraded from an empty placeholder into a working, tested project. It intentionally keeps infrastructure light: the core banking rules are implemented in pure Python, persisted through an atomic JSON store, and covered by focused automated tests.
